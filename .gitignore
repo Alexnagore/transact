@@ -146,5 +146,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*repomix*
 
 var
