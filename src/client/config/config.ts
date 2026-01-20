@@ -1,5 +1,5 @@
 import { HeartPulse, Joystick, SlidersHorizontal, Terminal, Video, MapPinned,
-  Cctv, LockKeyhole, Wrench }from 'lucide-react';
+  Cctv, LockKeyhole, Wrench, Flag }from 'lucide-react';
 
 import { Capability } from '../models/device';
 
@@ -22,6 +22,18 @@ export const capabilities: Record<string, Capability> = {
     displayName: 'Ros Tool',
     route: '/tool',
     icon: Wrench
+  },
+  'missions':{
+    id: '@transitive-robotics/missions',
+    displayName: 'Missions',
+    route: '/missions',
+    icon: Flag
+  },
+  'foxglove-webrtc': {
+    id: '@transitive-robotics/foxglove-webrtc',
+    displayName: 'Foxglove',
+    route: '/foxwebrtc',
+    icon: Video
   },
   'maps': {
     id: '@transitive-robotics/maps',
