@@ -1,13 +1,28 @@
 import { HeartPulse, Joystick, SlidersHorizontal, Terminal, Video, MapPinned,
-    Cctv, LockKeyhole }from 'lucide-react';
+  Cctv, LockKeyhole, Wrench }from 'lucide-react';
 
-import { Capability } from '@models/device';
+import { Capability } from '../models/device';
 
 /**
  * Configure the Transitive capabilities you have installed on your fleet and
  * want to embed in your transAct dashboard.
  */
 export const capabilities: Record<string, Capability> = {
+  'health-monitoring': {
+    id: '@transitive-robotics/health-monitoring',
+    displayName: 'Health',
+    route: '/health',
+    icon: HeartPulse,
+    props: {
+      delimiters: 'undefined'
+    }
+  },
+  'ros-tool':{
+    id: '@transitive-robotics/ros-tool',
+    displayName: 'Ros Tool',
+    route: '/tool',
+    icon: Wrench
+  },
   'maps': {
     id: '@transitive-robotics/maps',
     displayName: 'Map',
@@ -75,21 +90,13 @@ export const capabilities: Record<string, Capability> = {
     route: '/terminal',
     icon: Terminal
   },
-  'health-monitoring': {
-    id: '@transitive-robotics/health-monitoring',
-    displayName: 'Health',
-    route: '/health',
-    icon: HeartPulse,
-    props: {
-      delimiters: 'undefined'
-    }
-  },
   'configuration-management':{
     id: '@transitive-robotics/configuration-management',
     displayName: 'Configuration',
     route: '/configuration',
     icon: SlidersHorizontal
   },
+  /*
   'video-recorder': {
     id: '@transitive-robotics/video-recorder',
     displayName: 'Video Recorder',
@@ -107,6 +114,7 @@ export const capabilities: Record<string, Capability> = {
       // end: "1748973600000",
     }
   },
+  */
   'robot-lock': {
     id: '@transitive-robotics/robot-lock',
     displayName: 'Robot Lock',

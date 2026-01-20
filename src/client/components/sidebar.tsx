@@ -45,8 +45,8 @@ export function Sidebar(){
         <div>
           {/* <div>SuperBots</div>
           <div className='text-xs text-muted-foreground '>transAct</div> */}
-          <div className='text-xs text-muted-foreground font-normal'>SuperBots</div>
-          <div style={{fontSize: '1.4rem', lineHeight: '1rem' }}>transAct</div>
+          <div className='text-xs text-muted-foreground font-normal'>Phenomenon</div>
+          <div style={{fontSize: '1.4rem', lineHeight: '1rem' }}>BRIT</div>
         </div>
       </div>
       <ScrollArea className='grow grid items-start px-2 text-sm font-medium lg:px-4'>
