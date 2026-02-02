@@ -41,7 +41,7 @@ const ProviderWithRosTool = ({ children }) => {
     const device_data = mergeVersions(device['@transitive-robotics']['_robot-agent']);
     const deviceCapabilities: Record<string, Capability> = {};
 
-    _.map(['@transitive-robotics', '@local'], (scope : string) => {    
+    _.map(['@transitive-robotics', '@local', '@phenomenonrobotics'], (scope : string) => {    
       _.map(
         _.pickBy(
           device_data?.status?.runningPackages?.[scope],

@@ -17,12 +17,19 @@ export const capabilities: Record<string, Capability> = {
       delimiters: 'undefined'
     }
   },
-  'ros-tool':{
+  'monitoring': {
+    id: '@phenomenonrobotics/monitoring',
+    displayName: 'Monitoring',
+    route: '/monitoring',
+    icon: HeartPulse,
+  },
+  /*'ros-tool':{
     id: '@transitive-robotics/ros-tool',
     displayName: 'Ros Tool',
     route: '/tool',
     icon: Wrench
   },
+  */
   'missions':{
     id: '@transitive-robotics/missions',
     displayName: 'Missions',
